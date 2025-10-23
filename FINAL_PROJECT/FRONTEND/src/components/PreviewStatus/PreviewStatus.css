@@ -1,0 +1,105 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f4f7f6;
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  color: #455a64;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.details-grid p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+/* Status Section Styling */
+.status-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.status-box {
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: orange;
+  display: inline-block;
+}
+
+/* .status-pending { background-color: #ff9800; }
+.status-approved { background-color: #4caf50; }
+.status-rejected { background-color: #f44336; } */
+
+/* Documents Section Styling */
+.documents-section {
+  margin-top: 40px;
+}
+
+.document-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.document-button {
+  padding: 12px 25px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.document-button:hover {
+  background-color: #303f9f;
+}
+
+.loading-container, .error-container, .no-data-container {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+.error-container {
+  color: #d32f2f;
+}

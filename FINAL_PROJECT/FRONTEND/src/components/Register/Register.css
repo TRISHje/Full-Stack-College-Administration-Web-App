@@ -1,0 +1,196 @@
+/* Basic Page and Container Styles */
+body {
+  background-color: #f4f7f6;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Form Titles and Sections */
+.form-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1a237e;
+  margin-bottom: 25px;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #455a64;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout for Form Fields */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Individual Form Fields */
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-field input,
+.form-field select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: #3f51b5;
+  box-shadow: 0 0 0 3px rgba(63, 81, 181, 0.2);
+}
+
+.form-field input[disabled] {
+  background-color: #e9e9e9;
+  cursor: not-allowed;
+}
+
+/* Custom File Input Styling */
+.file-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-input-wrapper input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file-input-wrapper::before {
+  content: 'Choose File';
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.file-input-wrapper:hover::before {
+  background-color: #303f9f;
+}
+
+.file-name {
+  color: #666;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: #303f9f;
+}
+
+.submit-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Loader and Error Messages */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3f51b5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  color: #d32f2f;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.submission-message {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #e8f5e9; /* A light green to signify success */
+  color: #2e7d32; /* A dark green for the text */
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 20px 0;
+  border: 1px solid #c8e6c9;
+}
+
+.submission-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a237e; /* A dark blue for the title */
+  margin-bottom: 10px;
+}

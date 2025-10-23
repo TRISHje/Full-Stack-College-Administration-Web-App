@@ -1,0 +1,55 @@
+.cams-notice-section { /* Renamed from .notice */
+    margin: 50px auto 80px auto;
+    padding: 0 80px;
+    position: relative;
+}
+
+.cams-next-btn, .cams-back-btn { /* Renamed from .nxt-btn, .back-btn */
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 15px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #212AE0;
+}
+.cams-back-btn { /* Renamed selector */
+    right: auto;
+    left: 0;
+}
+
+.cams-slider { /* Renamed from .slider */
+    overflow: hidden;
+}
+.cams-slider ul { /* Renamed selector */
+    display: flex;
+    width: 200%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cams-slider ul li { /* Renamed selector */
+    list-style: none;
+    width:50%;
+    padding: 20px;
+}
+.cams-slide { /* Renamed from .slide */
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+}
+
+.cams-info-box { /* Renamed from .info */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.cams-info-box h3 { /* Renamed selector */
+    color: #212AE0;
+}

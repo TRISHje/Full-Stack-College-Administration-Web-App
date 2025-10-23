@@ -1,0 +1,41 @@
+.about{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.about-left{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-right{
+    flex-basis: 56%;
+}
+
+.aboutimg{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.about h3{
+font-weight: 600;
+font-size: 25px;
+color: #212EA0;
+
+} 
+
+.about h2{
+    margin: 10px 0;
+    font-size: 35px;
+    color: #000F38;
+    max-width: 400px;
+    } 
+
+.about p{
+    columns: #676767;
+margin-bottom: 15px;
+}

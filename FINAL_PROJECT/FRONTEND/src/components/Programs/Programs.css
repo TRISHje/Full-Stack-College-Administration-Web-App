@@ -1,0 +1,45 @@
+.cams-programs-section { /* Renamed from .programs */
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cams-program-item img { /* Renamed from .program img */
+    width: 100%;
+    display: block;
+    border-radius: 10px
+}
+.cams-program-item { /* Renamed from .program */
+    flex-basis: 30%;
+    position: relative;
+}
+.cams-program-caption { /* Renamed from .caption */
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0,15,152,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: white;
+    cursor: pointer;
+    padding-top: 70%;
+    transition: 0.8s;
+}
+
+.cams-program-caption img { /* Renamed selector */
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.cams-program-item:hover .cams-program-caption { /* Renamed selector */
+    opacity: 1;
+    padding-top: 0;
+}
